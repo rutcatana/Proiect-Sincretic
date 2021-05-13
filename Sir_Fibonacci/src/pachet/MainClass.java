@@ -15,6 +15,9 @@ public class MainClass {
 		int nr = scanner.nextInt();
 		
 		System.out.println("Ati introdus: "+nr);
+		
+		Fibonacci fibo = new Fibonacci(nr);
+		fibo.genereazaSir();
 	}
 
 }
