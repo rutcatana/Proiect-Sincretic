@@ -1,0 +1,3 @@
+INDEX VERSION 1.131+E:\Proiect-Sincretic\.metadata\.plugins\org.eclipse.jdt.core
+566228051.index
+3863201353.index
