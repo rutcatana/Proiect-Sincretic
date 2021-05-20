@@ -25,8 +25,8 @@ public class Fibonacci {
 		
 		ArrayList<Integer> sir = new ArrayList<Integer>();
 		
-		//instructiunea for unde se genereaza numerele
-		for(int i = 1; i <= nr; i++) {
+		//instructiunea do-while unde se genereaza numerele	
+		do {
             a = b;
             b = c;
             c = a + b;
@@ -35,7 +35,7 @@ public class Fibonacci {
             
             //adaugam in vector numarul
             sir.add(a);
-        }
+        } while(b<=nr);
 		
 		return sir;
 	}
