@@ -1,5 +1,6 @@
 package pachet;
 
+import java.util.ArrayList;
 import java.util.Scanner;
 
 /**
@@ -17,6 +18,7 @@ public class MainClass {
 
 	//metoda principala de unde incepe executia programului
 	public static void main(String[] args) {
+		ArrayList<Integer> sir;
 		
 		//mesaj care afiseaza scopul programului
 		System.out.println("Program care genereaza sirul lui Fibonacci");
@@ -36,7 +38,11 @@ public class MainClass {
 		//crearea unui obiect de tip Fibonacii
 		Fibonacci fibo = new Fibonacci(nr);
 		//apelarea metodei care genereaza sirul
-		fibo.genereazaSir();
+		sir = fibo.genereazaSir();
+		
+		for(int i=0; i<sir.size(); i++) {
+			System.out.println(sir.get(i));
+		}
 	}
 
 }

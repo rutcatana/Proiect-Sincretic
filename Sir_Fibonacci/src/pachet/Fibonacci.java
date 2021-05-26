@@ -12,31 +12,34 @@ import java.util.Vector;
 public class Fibonacci {
 	//numarul de numere care trebuie afisate din sir. A fost citit de la tastatura in clasa MainClass
 	private int nr;
+	private ArrayList<Integer> sir;
 	
 	//constructorul clasei unde se initializeaza valoarea variabilei nr
 	public Fibonacci(int nr) {
 		this.nr = nr;
+		sir = new ArrayList<Integer>();
 	}
 	
 	//metoda care genereaza numere din sirul lui Fibonacii
 	public ArrayList<Integer> genereazaSir() {
+		
 		//cele 3 variabil de care avem nevoie pentru a contrui sirul
 		int a = 0, b = 0 , c = 1;
-		
-		ArrayList<Integer> sir = new ArrayList<Integer>();
 		
 		//instructiunea do-while unde se genereaza numerele	
 		do {
             a = b;
             b = c;
             c = a + b;
-            //afisarea fiecarui numar din sir
-            System.out.print(a+" ");
             
             //adaugam in vector numarul
             sir.add(a);
         } while(b<=nr);
 		
+		return sir;
+	}
+	
+	public ArrayList<Integer> getSir(){
 		return sir;
 	}
 	
